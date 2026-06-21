@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- 3. Countdown Timer ---
-    // Target Date: 30 June 2026, 18:00:00 (Adjust as needed)
-    const targetDate = new Date("Jun 30, 2026 18:00:00").getTime();
+    // Target Date: 30 June 2026, 19:00:00 (Adjust as needed)
+    const targetDate = new Date("Jun 30, 2026 19:00:00").getTime();
 
     const updateCountdown = () => {
         const now = new Date().getTime();
@@ -151,11 +151,11 @@ PRODID:-//Preeti and Pradeep 25th Anniversary//EN
 BEGIN:VEVENT
 UID:${new Date().getTime()}@anniversary.com
 DTSTAMP:${formatDateICS(new Date())}
-DTSTART:20260630T123000Z
-DTEND:20260630T183000Z
+DTSTART:20260630T133000Z
+DTEND:20260630T193000Z
 SUMMARY:Preeti & Pradeep's 25th Anniversary
 DESCRIPTION:Join us to celebrate 25 years of love and togetherness! Dress Code: Traditional/Formal Evening Wear.
-LOCATION:To be announced
+LOCATION:The Diamond Crown\, New Delhi
 END:VEVENT
 END:VCALENDAR`;
 
