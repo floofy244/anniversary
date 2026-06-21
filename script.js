@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const formData = new FormData();
         formData.append('name', document.getElementById('guest-name').value);
-        formData.append('guests', document.getElementById('guest-count').value);
+        formData.append('guests', '1');
         formData.append('message', document.getElementById('guest-message').value);
         formData.append('timestamp', new Date().toLocaleString());
 
@@ -160,7 +160,7 @@ DTSTART:20260630T123000Z
 DTEND:20260630T183000Z
 SUMMARY:Preeti & Pradeep's 25th Anniversary
 DESCRIPTION:Join us to celebrate 25 years of love and togetherness! Dress Code: Traditional/Formal Evening Wear.
-LOCATION:The Grand Taj Palace\\, New Delhi
+LOCATION:To be announced
 END:VEVENT
 END:VCALENDAR`;
 
