@@ -5,26 +5,21 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    // --- 1. Background Music Toggle ---
-    const musicToggleBtn = document.getElementById('music-toggle');
+    // --- 1. Background Music Auto-Play ---
     const bgMusic = document.getElementById('bg-music');
-    let isMusicPlaying = false;
+    
+    // Modern browsers block autoplay without user interaction.
+    // This starts the music on the user's first scroll or click.
+    const startMusic = () => {
+        bgMusic.play().catch(() => {});
+        document.removeEventListener('click', startMusic);
+        document.removeEventListener('scroll', startMusic);
+        document.removeEventListener('touchstart', startMusic);
+    };
 
-    musicToggleBtn.addEventListener('click', () => {
-        if (isMusicPlaying) {
-            bgMusic.pause();
-            musicToggleBtn.querySelector('.icon').textContent = '🎵';
-            musicToggleBtn.classList.remove('playing');
-        } else {
-            // Error handling in case music file is missing
-            bgMusic.play().catch(error => {
-                console.log("Audio play failed, likely placeholder missing.", error);
-            });
-            musicToggleBtn.querySelector('.icon').textContent = '⏸';
-            musicToggleBtn.classList.add('playing');
-        }
-        isMusicPlaying = !isMusicPlaying;
-    });
+    document.addEventListener('click', startMusic);
+    document.addEventListener('scroll', startMusic);
+    document.addEventListener('touchstart', startMusic);
 
     // --- 2. Scroll Reveal Animations ---
     const revealElements = document.querySelectorAll('.reveal');
