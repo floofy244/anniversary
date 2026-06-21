@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save the Date | 25th Anniversary</title>
+    <!-- SEO & Meta -->
+    <meta name="description" content="Save the Date for the 25th Anniversary Celebration of Preeti and Pradeep.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Design Elements -->
+    <div class="bg-gradient"></div>
+    <div class="mandala-overlay"></div>
+    <div id="particles-container"></div>
+
+    <!-- Music Toggle -->
+    <button id="music-toggle" aria-label="Toggle Music" class="floating-btn">
+        <span class="icon">🎵</span>
+    </button>
+    <!-- EDIT: Replace src with actual music file -->
+    <audio id="bg-music" loop>
+        <source src="placeholder-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero reveal active" id="hero">
+            <div class="hero-content glass-card glowing-border">
+                <div class="diya-glow"></div>
+                <p class="subtitle">Join us to celebrate</p>
+                <h1 class="title">25 Years of Love</h1>
+                
+                <!-- EDIT: Replace with couple's names -->
+                <div class="names">
+                    <span>Preeti</span>
+                    <span class="ampersand">&amp;</span>
+                    <span>Pradeep</span>
+                </div>
+                
+                <div class="decorative-line"></div>
+                
+                <!-- EDIT: Replace with actual date -->
+                <p class="date">Tuesday, 30th June 2026</p>
+                <!-- EDIT: Replace with actual venue -->
+                <p class="venue">The Grand Taj Palace, New Delhi</p>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>Discover</span>
+                <div class="arrow-down"></div>
+            </div>
+        </section>
+
+        <!-- Invitation Message -->
+        <section class="message-section reveal">
+            <div class="content-wrapper text-center glass-card">
+                <h2 class="section-title">Save the Date</h2>
+                <div class="divider"></div>
+                <!-- EDIT: Replace with personalized message -->
+                <p class="message-text">
+                    We are thrilled to invite you to celebrate our parents' silver anniversary. 
+                    Twenty-five years of togetherness, laughter, and endless love have led them to this beautiful milestone. 
+                    Your presence and blessings will make the celebration complete.
+                </p>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="countdown-section reveal">
+            <div class="countdown-container glass-card">
+                <h3 class="countdown-title">The Celebration Begins In</h3>
+                <div id="countdown" class="countdown">
+                    <div class="time-box">
+                        <span id="days">00</span>
+                        <p>Days</p>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="time-box">
+                        <span id="hours">00</span>
+                        <p>Hours</p>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="time-box">
+                        <span id="minutes">00</span>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="time-box">
+                        <span id="seconds">00</span>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Details & Actions -->
+        <section class="details-section reveal">
+            <div class="grid-container">
+                <!-- Dress Code -->
+                <div class="detail-card glass-card">
+                    <div class="card-icon">✨</div>
+                    <h3 class="card-title">Dress Code</h3>
+                    <!-- EDIT: Replace with actual dress code -->
+                    <p class="card-text">Traditional Indian / Formal Evening Wear</p>
+                    <p class="sub-text">Theme colors: Maroon, Gold & Ivory</p>
+                </div>
+                
+                <!-- RSVP / Calendar Actions -->
+                <div class="action-card glass-card glowing-border">
+                    <h3 class="card-title">Will you join us?</h3>
+                    <div class="button-group">
+                        <button id="open-rsvp" class="btn primary-btn">
+                            <span class="btn-text">RSVP Now</span>
+                            <span class="btn-hover-effect"></span>
+                        </button>
+                        <button id="add-calendar" class="btn secondary-btn">
+                            <span class="btn-text">Add to Calendar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Placeholder -->
+        <section class="gallery-section reveal">
+            <div class="text-center">
+                <h2 class="section-title">A Journey of Love</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery-grid">
+                <!-- EDIT: Replace the background images in CSS or add img tags here -->
+                <div class="gallery-item glass-card">
+                    <div class="placeholder-img"><span>Memories</span></div>
+                </div>
+                <div class="gallery-item glass-card">
+                    <div class="placeholder-img"><span>Togetherness</span></div>
+                </div>
+                <div class="gallery-item glass-card">
+                    <div class="placeholder-img"><span>Eternity</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Map Placeholder -->
+        <section class="location-section reveal">
+            <div class="text-center">
+                <h2 class="section-title">Venue</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="map-container glass-card padding-zero">
+                <!-- EDIT: Replace this div with an actual Google Maps iframe -->
+                <div class="placeholder-map">
+                    <div class="map-content">
+                        <span class="map-icon">📍</span>
+                        <p>Interactive Map Integration</p>
+                        <p class="map-subtext">Embed your Google Maps link here</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer reveal">
+        <div class="footer-content">
+            <p class="closing">With love & warm regards,</p>
+            <!-- EDIT: Replace names -->
+            <h2 class="footer-names">Aviral & Daksh</h2>
+            <div class="footer-mandala"></div>
+        </div>
+    </footer>
+
+    <!-- RSVP Modal -->
+    <div id="rsvp-modal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content glass-card glowing-border">
+            <button class="close-btn" aria-label="Close RSVP form">&times;</button>
+            <h2 class="modal-title">RSVP</h2>
+            <p class="modal-subtitle">We can't wait to see you!</p>
+            
+            <form id="rsvp-form">
+                <div class="form-group">
+                    <label for="guest-name">Full Name</label>
+                    <input type="text" id="guest-name" required placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="guest-count">Number of Guests</label>
+                    <input type="number" id="guest-count" min="1" max="10" required value="1">
+                </div>
+                
+                <div class="form-group">
+                    <label for="guest-message">Message for the Couple (Optional)</label>
+                    <textarea id="guest-message" rows="3" placeholder="Leave a warm wish..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn primary-btn full-width">
+                    <span class="btn-text">Send RSVP</span>
+                    <span class="btn-hover-effect"></span>
+                </button>
+            </form>
+            
+            <!-- Success Message (Hidden by default) -->
+            <div id="rsvp-success" class="hidden">
+                <div class="success-icon">✨</div>
+                <h3>Thank You!</h3>
+                <p>Your RSVP has been received. We look forward to celebrating with you.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
